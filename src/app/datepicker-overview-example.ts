@@ -7,11 +7,9 @@ import { FormBuilder, FormControl, FormGroup } from "@angular/forms";
   templateUrl: "datepicker-overview-example.html"
 })
 export class DatepickerOverviewExample {
-  dateControl: FormControl;
   dateGp: FormGroup;
 
   constructor(private fb: FormBuilder) {
-    this.dateControl = new FormControl(null);
     this.dateGp = this.fb.group({
       dateControl: this.fb.control(null)
     });
